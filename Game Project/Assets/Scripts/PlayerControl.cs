@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour {
 	
 	private Rigidbody2D rb2d;
 	bool hyppy = true;
-	void Awake () 
+	void Start () 
 	{
 		rb2d = GetComponent<Rigidbody2D>();
 	}
@@ -22,15 +22,15 @@ public class PlayerControl : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-
-
+	
+		// Platformin läpi hyppiminen
 		if (rb2d.velocity.y > 0.0f) {
 			Physics2D.IgnoreLayerCollision (8, 9, true);
 		} else {
 			Physics2D.IgnoreLayerCollision(8, 9, false);
 		}
 
+		// Hyppiminen
 		if (Input.GetButtonDown ("Jump")) {
 			if (hyppy) {
 				jump = true;
@@ -41,6 +41,7 @@ public class PlayerControl : MonoBehaviour {
 		
 	}
 
+	// kerta hyppy
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.collider.tag == "Ground") {
 
@@ -51,6 +52,7 @@ public class PlayerControl : MonoBehaviour {
 
 	void FixedUpdate(){
 
+		// Liikkuminen
 			float h = Input.GetAxis("Horizontal");
 
 			if (h * rb2d.velocity.x < maxSpeed) {
@@ -63,12 +65,14 @@ public class PlayerControl : MonoBehaviour {
 			rb2d.velocity = new Vector2 (Mathf.Sign (rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
 		}
 
+		// spriten käätäminen
 		if (h > 0 && !facingRight) {
 			Flip ();
 		} else if (h < 0 && facingRight) {
 			Flip ();
 		}
 
+		// hyppy voima
 			if (jump)
 			{
 				rb2d.AddForce(new Vector2(0f, jumpForce));
@@ -78,6 +82,7 @@ public class PlayerControl : MonoBehaviour {
 
 		}
 
+	// Spriten kääntäminen classi
 	void Flip ()
 	{
 		facingRight = !facingRight;

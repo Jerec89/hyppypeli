@@ -17,11 +17,13 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+		// liikkuminen
 		MoveAmount.x = MoveDirection * MoveSpeed * Time.deltaTime;
 		transform.Translate (MoveAmount);
 	
 	}
 
+	// suunnan ja spriten kääntäminen
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "Wall1") {
 			MoveDirection = -1;
@@ -32,6 +34,8 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 
+
+	// spriten kääntämisen classi 
 	void Flip ()
 	{
 		facingRight = !facingRight;
