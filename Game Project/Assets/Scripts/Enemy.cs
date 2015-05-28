@@ -23,14 +23,15 @@ public class Enemy : MonoBehaviour {
 	
 	}
 
+
 	// suunnan ja spriten kääntäminen
-	void OnCollisionEnter2D(Collision2D coll){
-		if (coll.gameObject.tag == "Wall1") {
+	void OnTriggerEnter2D(Collider2D coll){
+		if (facingRight) {
 			MoveDirection = -1;
-			Flip();
-		} else if (coll.gameObject.tag == "Wall2"){
+			Flip ();
+		} else if (!facingRight) {
 			MoveDirection = 1;
-			Flip();
+			Flip ();
 		}
 	}
 

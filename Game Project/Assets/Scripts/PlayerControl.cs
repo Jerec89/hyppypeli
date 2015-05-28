@@ -13,6 +13,8 @@ public class PlayerControl : MonoBehaviour {
 	
 	private Rigidbody2D rb2d;
 	bool hyppy = true;
+	public static bool gameover = false;
+
 	void Start () 
 	{
 		rb2d = GetComponent<Rigidbody2D>();
@@ -43,6 +45,10 @@ public class PlayerControl : MonoBehaviour {
 
 	// kerta hyppy
 	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.tag == "enemy") {
+			Destroy (gameObject);
+			gameover = true;
+		}
 		if (other.collider.tag == "Ground") {
 
 			hyppy = true;
@@ -91,6 +97,7 @@ public class PlayerControl : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-		 
+
+
 	
 }
