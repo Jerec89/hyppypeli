@@ -10,12 +10,14 @@ public class Collect : MonoBehaviour {
 		if (coll.gameObject.tag == "Player1") {
 			Destroy(gameObject);
 			ScoreCont.score += scoreValue;
+
 		}
 	}
 
 
 	// Use this for initialization
 	void Start () {
+
 
 	}
 	
