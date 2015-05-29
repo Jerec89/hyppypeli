@@ -17,6 +17,7 @@ public class PlayerControl : MonoBehaviour {
 
 	void Start () 
 	{
+		gameover = false;
 		rb2d = GetComponent<Rigidbody2D>();
 	}
 	

@@ -26,6 +26,9 @@ public class TimeCont : MonoBehaviour {
 	void Update () {
 
 		TimeText.text = "Time: " + stopwatch.Elapsed.Minutes + " min " + stopwatch.Elapsed.Seconds + " s";
+		if (PlayerControl.gameover == true) {
+			stopwatch.Stop();
+		}
 	
 	}
 }

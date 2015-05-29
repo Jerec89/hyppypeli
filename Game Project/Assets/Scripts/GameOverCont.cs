@@ -24,6 +24,10 @@ public class GameOverCont : MonoBehaviour {
 
 		if (PlayerControl.gameover == true) {
 			gameOver.text = "Game Over";
+				if (Input.GetKeyDown (KeyCode.R))
+				{
+					Application.LoadLevel (Application.loadedLevel);
+				}
 		}
 
 	}

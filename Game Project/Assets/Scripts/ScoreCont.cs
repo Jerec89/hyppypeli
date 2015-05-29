@@ -18,6 +18,7 @@ public class ScoreCont : MonoBehaviour {
 	
 		gameObject.GetComponent<MeshRenderer> ().sortingLayerName = SortingLayerName;
 		gameObject.GetComponent<MeshRenderer> ().sortingOrder = SortingOrder;
+		score = 0;
 
 	}
 	
