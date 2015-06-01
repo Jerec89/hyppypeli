@@ -8,7 +8,7 @@ public class Collect : MonoBehaviour {
 	// objektin keräys
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "Player1") {
-			Destroy(gameObject);
+			Destroy (gameObject);
 			ScoreCont.score += scoreValue;
 
 		}
