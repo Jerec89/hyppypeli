@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverCont : MonoBehaviour {
+public class Deaths : MonoBehaviour {
 
 	public string SortingLayerName = "Default";
 	public int SortingOrder = 0;
 	
-	TextMesh gameOver;
+	TextMesh death;
+
+	public static int deaths;
 
 	// Use this for initialization
 	void Start () {
 
-		gameOver = GetComponent <TextMesh> ();
+		death = GetComponent <TextMesh> ();
 
-		gameOver.text = "";
+		deaths = 0;
 
 		gameObject.GetComponent<MeshRenderer> ().sortingLayerName = SortingLayerName;
 		gameObject.GetComponent<MeshRenderer> ().sortingOrder = SortingOrder;
@@ -22,13 +24,10 @@ public class GameOverCont : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (PlayerControl.gameover == true) {
-			gameOver.text = "Game Over";
-				if (Input.GetKeyDown (KeyCode.R))
-				{
-					Application.LoadLevel (Application.loadedLevel);
-				}
+
+		death.text = "Deaths: " + deaths;
+
 		}
 
-	}
+
 }

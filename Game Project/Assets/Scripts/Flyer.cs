@@ -7,13 +7,15 @@ public class Flyer : MonoBehaviour {
 
 	public float speed;
 
+	float test = 100;
+
 	public float range;
 
 	public LayerMask playerLayer;
 
 	public bool inRange = false;
 
-	private Vector3 startPos;
+	Vector3 startPos;
 
 
 	// Use this for initialization
@@ -38,9 +40,18 @@ public class Flyer : MonoBehaviour {
 		}
 	}
 
-	void OnDrawGizmosSelected(){
+	void OnDrawGizSelected(){
 
 		Gizmos.DrawSphere (transform.position, range);
 
 	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+
+		if (coll.gameObject.tag == "Player1") {
+		
+			transform.position = Vector3.MoveTowards(transform.position,startPos, test);
+		}
+	}
+	
 }

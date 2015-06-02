@@ -7,18 +7,24 @@ public class PlayerControl : MonoBehaviour {
     bool facingRight = true;
     bool jump = false;
 
+	int deathVal = 1;
+	float speed = 100;
 	public float moveForce;
 	public float maxSpeed;
 	public float jumpForce;
 	
+	private Animator anim;
 	private Rigidbody2D rb2d;
 	bool hyppy = true;
-	public static bool gameover = false;
+
+	Vector3 start;
 
 	void Start () 
 	{
-		gameover = false;
 		rb2d = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+
+		start = transform.position;
 	}
 	
 	
@@ -47,8 +53,9 @@ public class PlayerControl : MonoBehaviour {
 	// kerta hyppy
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "enemy") {
-			Destroy (gameObject);
-			gameover = true;
+
+			Deaths.deaths += deathVal;
+			transform.position = Vector3.MoveTowards(transform.position, start, speed);
 		}
 		if (other.collider.tag == "Ground") {
 
@@ -61,6 +68,8 @@ public class PlayerControl : MonoBehaviour {
 
 		// Liikkuminen
 			float h = Input.GetAxis("Horizontal");
+
+			anim.SetFloat("Speed", Mathf.Abs(h));
 
 			if (h * rb2d.velocity.x < maxSpeed) {
 
@@ -98,7 +107,6 @@ public class PlayerControl : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
-
 	
+
 }
