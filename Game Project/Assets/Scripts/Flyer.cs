@@ -7,7 +7,7 @@ public class Flyer : MonoBehaviour {
 
 	public float speed;
 
-	float test = 100;
+	float Back = 100;
 
 	public float range;
 
@@ -33,14 +33,14 @@ public class Flyer : MonoBehaviour {
 		inRange = Physics2D.OverlapCircle (transform.position, range, playerLayer);
 
 		if (inRange) {
-
+			
 			transform.position = Vector3.MoveTowards (transform.position, thePlayer.transform.position, speed * Time.deltaTime);
 		} else if (!inRange) {
 			transform.position = Vector3.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
 		}
 	}
 
-	void OnDrawGizSelected(){
+	void OnDrawGizmosSelected(){
 
 		Gizmos.DrawSphere (transform.position, range);
 
@@ -50,7 +50,7 @@ public class Flyer : MonoBehaviour {
 
 		if (coll.gameObject.tag == "Player1") {
 		
-			transform.position = Vector3.MoveTowards(transform.position,startPos, test);
+			transform.position = Vector3.MoveTowards(transform.position,startPos, Back);
 		}
 	}
 	

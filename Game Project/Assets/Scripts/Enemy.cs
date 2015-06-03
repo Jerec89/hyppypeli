@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
-
+	
 	public float MoveSpeed;
 	public Vector2 MoveAmount;
 	private float MoveDirection = 1.0f;
@@ -45,7 +45,6 @@ public class Enemy : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
 
 
 }

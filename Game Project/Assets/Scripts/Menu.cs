@@ -21,7 +21,7 @@ public class Menu : MonoBehaviour {
 	void OnMouseDown(){
 		
 		if (this.name == "MapText") {
-			Application.LoadLevel ("test_Map");
+			Application.LoadLevel ("Level1");
 			
 		} 
 
@@ -41,7 +41,7 @@ public class Menu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+	
 	}
 	
 	// Update is called once per frame
