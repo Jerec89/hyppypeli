@@ -4,11 +4,29 @@ using System.Collections;
 public class LevelChange : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll){
-		if (coll.gameObject.tag == "Player1") {
-			Application.LoadLevel("test_Map");
+		if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1") {
+			Application.LoadLevel ("Level1a");
 			
+		} else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1") {
+			Application.LoadLevel ("Level1b");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1a") {
+			Application.LoadLevel ("test_Map");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1a") {
+			Application.LoadLevel ("test_Map");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1b") {
+			Application.LoadLevel ("test_Map");
 		}
 		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1b") {
+			Application.LoadLevel ("test_Map");
+		}
+
 	}
 
 	// Use this for initialization
