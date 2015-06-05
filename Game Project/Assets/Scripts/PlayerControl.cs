@@ -12,18 +12,19 @@ public class PlayerControl : MonoBehaviour {
 	public float moveForce;
 	public float maxSpeed;
 	public float jumpForce;
-	
+
+
 	private Animator anim;
-	private Rigidbody2D rb2d;
+	private Rigidbody2D rb;
 	bool hyppy = true;
 
 	Vector3 start;
 
 	void Start () 
 	{
-		rb2d = GetComponent<Rigidbody2D>();
+		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-
+	
 		start = transform.position;
 	}
 	
@@ -33,7 +34,7 @@ public class PlayerControl : MonoBehaviour {
 	void Update () {
 	
 		// Platformin läpi hyppiminen
-		if (rb2d.velocity.y > 0.0f) {
+		if (rb.velocity.y > 0.0f) {
 			Physics2D.IgnoreLayerCollision (8, 9, true);
 		} else {
 			Physics2D.IgnoreLayerCollision(8, 9, false);
@@ -44,6 +45,7 @@ public class PlayerControl : MonoBehaviour {
 			if (hyppy) {
 				jump = true;
 				hyppy = false;
+
 			}
 		}
 		
@@ -71,14 +73,14 @@ public class PlayerControl : MonoBehaviour {
 
 			anim.SetFloat("Speed", Mathf.Abs(h));
 
-			if (h * rb2d.velocity.x < maxSpeed) {
+			if (h * rb.velocity.x < maxSpeed) {
 
-			rb2d.AddForce (Vector2.right * h * moveForce);
+			rb.AddForce (Vector2.right * h * moveForce);
 
 		}
-			if (Mathf.Abs (rb2d.velocity.x) > maxSpeed) {
+			if (Mathf.Abs (rb.velocity.x) > maxSpeed) {
 
-			rb2d.velocity = new Vector2 (Mathf.Sign (rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
+			rb.velocity = new Vector2 (Mathf.Sign (rb.velocity.x) * maxSpeed, rb.velocity.y);
 		}
 
 		// spriten käätäminen
@@ -91,7 +93,7 @@ public class PlayerControl : MonoBehaviour {
 		// hyppy voima
 			if (jump)
 			{
-				rb2d.AddForce(new Vector2(0f, jumpForce));
+				rb.AddForce(new Vector2(0f, jumpForce));
 				jump = false;
 			}
 

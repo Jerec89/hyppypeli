@@ -3,7 +3,7 @@ using System.Collections;
 
 public class tracking : MonoBehaviour {
 
-	private Transform target = null;
+	public Transform target;
 
 	public float firerate;
 	public float delay;
@@ -25,15 +25,7 @@ public class tracking : MonoBehaviour {
 			transform.rotation = Quaternion.AngleAxis (angle, Vector3.forward);
 		}
 		}
-
-
-	void OnTriggerEnter2D(Collider2D coll){
-		if (coll.gameObject.tag == "Player1") {
-			target = coll.transform;
-
-		}
-
-	}
+	
 
 	void Fire(){
 		Instantiate (shot, shotSpawn.position, shotSpawn.rotation);

@@ -40,7 +40,7 @@ public class Flyer : MonoBehaviour {
 		}
 	}
 
-	void OnDrawGizmosSelected(){
+	void OnDrawGizmoSelected(){
 
 		Gizmos.DrawSphere (transform.position, range);
 

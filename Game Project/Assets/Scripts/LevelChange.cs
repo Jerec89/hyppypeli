@@ -12,18 +12,34 @@ public class LevelChange : MonoBehaviour {
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1a") {
-			Application.LoadLevel ("test_Map");
+			Application.LoadLevel ("Level1a2");
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1a") {
-			Application.LoadLevel ("test_Map");
+			Application.LoadLevel ("Level1b2");
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1b") {
-			Application.LoadLevel ("test_Map");
+			Application.LoadLevel ("Level1a2");
 		}
 		
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1b") {
+			Application.LoadLevel ("Level1b2");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1a2") {
+			Application.LoadLevel ("Level1a3");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1a2") {
+			Application.LoadLevel ("test_Map");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1b2") {
+			Application.LoadLevel ("Level1a3");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level1b2") {
 			Application.LoadLevel ("test_Map");
 		}
 
