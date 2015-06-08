@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Flyer : MonoBehaviour {
+public class bat : MonoBehaviour {
 
 	private PlayerControl thePlayer;
 
@@ -17,12 +17,16 @@ public class Flyer : MonoBehaviour {
 
 	Vector3 startPos;
 
+	private Animator anim;
+
 
 	// Use this for initialization
 	void Start () {
 
 		thePlayer = FindObjectOfType<PlayerControl> ();
 		startPos = transform.position;
+		anim = GetComponent<Animator>();
+
 
 	
 	}
@@ -35,8 +39,19 @@ public class Flyer : MonoBehaviour {
 		if (inRange) {
 			
 			transform.position = Vector3.MoveTowards (transform.position, thePlayer.transform.position, speed * Time.deltaTime);
+			anim.SetBool ("move", true);
+		
+		
+
+
 		} else if (!inRange) {
-			transform.position = Vector3.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
+			transform.position = Vector3.MoveTowards (transform.position, startPos, speed * Time.deltaTime);
+		
+
+			if (transform.position == startPos) {
+				anim.SetBool ("move", false);
+			}
+
 		}
 	}
 
@@ -53,5 +68,7 @@ public class Flyer : MonoBehaviour {
 			transform.position = Vector3.MoveTowards(transform.position,startPos, Back);
 		}
 	}
+
+
 	
 }
