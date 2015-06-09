@@ -4,6 +4,9 @@ using System.Collections;
 public class LevelChange : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll){
+
+		//Level 1
+
 		if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1") {
 			Application.LoadLevel ("Level1a");
 			
@@ -44,7 +47,28 @@ public class LevelChange : MonoBehaviour {
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelC" && (Application.loadedLevelName == "Level1a3" || Application.loadedLevelName == "Level1b3") ) {
-			Application.LoadLevel ("test_Map");
+			Application.LoadLevel ("Level2");
+		}
+
+
+
+
+		//Level 2
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level2") {
+			Application.LoadLevel ("Level2a");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level2") {
+			Application.LoadLevel ("MainMenu");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level2a") {
+			Application.LoadLevel ("MainMenu");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level2a") {
+			Application.LoadLevel ("MainMenu");
 		}
 
 	}
