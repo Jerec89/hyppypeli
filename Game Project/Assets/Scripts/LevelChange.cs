@@ -60,14 +60,30 @@ public class LevelChange : MonoBehaviour {
 		}
 		
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level2") {
-			Application.LoadLevel ("MainMenu");
+			Application.LoadLevel ("Level2b");
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level2a") {
-			Application.LoadLevel ("MainMenu");
+			Application.LoadLevel ("Level2a2");
 		}
 		
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level2a") {
+			Application.LoadLevel ("MainMenu");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level2b") {
+			Application.LoadLevel ("MainMenu");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level2b") {
+			Application.LoadLevel ("Level2a2");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level2a2") {
+			Application.LoadLevel ("MainMenu");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level2a2") {
 			Application.LoadLevel ("MainMenu");
 		}
 
