@@ -18,7 +18,7 @@ public class area : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		inRange = Physics2D.OverlapCircle (transform.position, (range), playerLayer);
+		inRange = Physics2D.OverlapCircle (transform.position, range, playerLayer);
 	}
 
 	void OnDrawGizmosSelected(){
