@@ -20,6 +20,7 @@ public class ScoreCont : MonoBehaviour {
 		gameObject.GetComponent<MeshRenderer> ().sortingOrder = SortingOrder;
 		score = 0;
 
+
 	}
 	
 	// Update is called once per frame
