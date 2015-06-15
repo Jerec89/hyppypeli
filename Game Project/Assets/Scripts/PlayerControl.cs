@@ -48,7 +48,7 @@ public class PlayerControl : MonoBehaviour {
 
 			}
 		}
-		
+
 		
 	}
 
@@ -62,6 +62,11 @@ public class PlayerControl : MonoBehaviour {
 		if (other.collider.tag == "Ground") {
 
 			hyppy = true;
+		}
+
+		if (other.gameObject.tag == "Score") {
+			
+			GetComponent<AudioSource>().Play();
 		}
 
 	}

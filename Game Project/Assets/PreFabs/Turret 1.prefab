@@ -39,8 +39,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187562}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.1000004, y: -4.9000001, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106709}
+  m_LocalPosition: {x: -8, y: -1.11000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 434194}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4decf378d2ccae542a6ede1e025dfd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firerate: 2
+  firerate: 1
   delay: 1
   shot: {fileID: 106740, guid: 1b2ca233468c6f2478a3af102f84c3ea, type: 2}
   shotSpawn: {fileID: 434194}
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300006, guid: 3f6e89bc8a84e62489973c6aa0f02a88, type: 3}
-  m_Color: {r: .375, g: .343052745, b: .259191185, a: 1}
+  m_Color: {r: .757352948, g: .0891003385, b: .0891003385, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

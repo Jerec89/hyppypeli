@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class track2 : MonoBehaviour {
-
+public class fire_sound : MonoBehaviour {
+	
 	public float firerate;
 	public float delay;
-	public GameObject shot;
-	public Transform shotSpawn;
-
+	
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("Fire", delay, firerate);
@@ -15,11 +13,10 @@ public class track2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
-
-	void Fire(){
-		Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 	
+	void Fire(){
+		GetComponent<AudioSource> ().Play ();
 	}
 }
