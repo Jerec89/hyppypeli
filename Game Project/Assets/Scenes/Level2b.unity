@@ -394,15 +394,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21221212, guid: 707926750122483489e4373d5c824f5d, type: 2}
       propertyPath: m_Color.r
-      value: .551470578
+      value: .375
       objectReference: {fileID: 0}
     - target: {fileID: 21221212, guid: 707926750122483489e4373d5c824f5d, type: 2}
       propertyPath: m_Color.g
-      value: .551470578
+      value: .343052745
       objectReference: {fileID: 0}
     - target: {fileID: 21221212, guid: 707926750122483489e4373d5c824f5d, type: 2}
       propertyPath: m_Color.b
-      value: .551470578
+      value: .259191185
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 707926750122483489e4373d5c824f5d, type: 2}
@@ -721,7 +721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
 --- !u!1001 &262567151
 Prefab:
   m_ObjectHideFlags: 0
@@ -1928,7 +1928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 55
 --- !u!1001 &834549433
 Prefab:
   m_ObjectHideFlags: 0
@@ -2327,7 +2327,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 56
 --- !u!1 &1014815260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,7 +2368,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
 --- !u!1001 &1016664414
 Prefab:
   m_ObjectHideFlags: 0

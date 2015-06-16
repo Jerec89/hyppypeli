@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11464564}
   - 60: {fileID: 6063828}
   - 95: {fileID: 9594458}
-  - 82: {fileID: 8208574}
+  - 82: {fileID: 8278598}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player1
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.3599997, y: -9, z: 0}
+  m_LocalPosition: {x: -15.2700005, y: -8.98999977, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ PolygonCollider2D:
       - {x: .239999995, y: -.129999995}
       - {x: .239999995, y: .119999997}
       - {x: .209999993, y: .170000002}
---- !u!82 &8208574
+--- !u!82 &8278598
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,9 +86,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 992f4bec4ac6e3547a7a0f1cd8d26c51, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 45049e606de529148a6f126ac3ab7bab, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .25
+  m_Volume: .479999989
   m_Pitch: 1
   Loop: 0
   Mute: 0

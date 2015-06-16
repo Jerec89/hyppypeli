@@ -12,20 +12,22 @@ public class PlayerControl : MonoBehaviour {
 	public float moveForce;
 	public float maxSpeed;
 	public float jumpForce;
-
-
+	
 	private Animator anim;
 	private Rigidbody2D rb;
 	bool hyppy = true;
 
 	Vector3 start;
 
+
 	void Start () 
 	{
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-	
+
 		start = transform.position;
+
+	
 	}
 	
 	
@@ -45,6 +47,8 @@ public class PlayerControl : MonoBehaviour {
 			if (hyppy) {
 				jump = true;
 				hyppy = false;
+				GetComponent<AudioSource>().Play();
+
 
 			}
 		}
@@ -64,9 +68,8 @@ public class PlayerControl : MonoBehaviour {
 			hyppy = true;
 		}
 
-		if (other.gameObject.tag == "Score") {
-			
-			GetComponent<AudioSource>().Play();
+		if (other.gameObject.tag == "Score"){
+	
 		}
 
 	}
