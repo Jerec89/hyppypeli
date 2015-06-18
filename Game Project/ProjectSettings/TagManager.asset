@@ -17,6 +17,8 @@ TagManager:
   - levelA
   - levelB
   - levelC
+  - Down
+  - Up
   layers:
   - Default
   - TransparentFX
