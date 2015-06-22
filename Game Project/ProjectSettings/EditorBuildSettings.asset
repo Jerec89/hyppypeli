@@ -45,3 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3b.unity
   - enabled: 1
     path: Assets/Scenes/Level3a2.unity
+  - enabled: 1
+    path: Assets/Scenes/Level3b2.unity
+  - enabled: 1
+    path: Assets/Scenes/Level3a3.unity
