@@ -19,6 +19,7 @@ TagManager:
   - levelC
   - Down
   - Up
+  - area
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: daf53e6021b35134cb4ede841b912083
+timeCreated: 1435220124
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PC Computer - Maple Story - Black Dragon_0
+    21300002: PC Computer - Maple Story - Black Dragon_1
+    21300004: PC Computer - Maple Story - Black Dragon_2
+    21300006: PC Computer - Maple Story - Black Dragon_3
+    21300008: PC Computer - Maple Story - Black Dragon_4
+    21300010: PC Computer - Maple Story - Black Dragon_5
+    21300012: PC Computer - Maple Story - Black Dragon_6
+    21300014: PC Computer - Maple Story - Black Dragon_7
+    21300016: PC Computer - Maple Story - Black Dragon_8
+    21300018: PC Computer - Maple Story - Black Dragon_9
+    21300020: PC Computer - Maple Story - Black Dragon_10
+    21300022: PC Computer - Maple Story - Black Dragon_11
+    21300024: PC Computer - Maple Story - Black Dragon_12
+    21300026: PC Computer - Maple Story - Black Dragon_13
+    21300028: PC Computer - Maple Story - Black Dragon_14
+    21300030: PC Computer - Maple Story - Black Dragon_15
+    21300032: PC Computer - Maple Story - Black Dragon_16
+    21300034: PC Computer - Maple Story - Black Dragon_17
+    21300036: PC Computer - Maple Story - Black Dragon_18
+    21300038: PC Computer - Maple Story - Black Dragon_19
+    21300040: PC Computer - Maple Story - Black Dragon_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PC Computer - Maple Story - Black Dragon_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1462
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1463
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1461
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1462
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1463
+        width: 79
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1384
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1387
+        width: 72
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1381
+        width: 67
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_8
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1382
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1384
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1382
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1381
+        width: 72
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_12
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1378
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_13
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1375
+        width: 72
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_14
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1369
+        width: 85
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1308
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_16
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1304
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1302
+        width: 76
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_18
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1308
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1310
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Maple Story - Black Dragon_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1232
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
