@@ -150,6 +150,21 @@ public class LevelChange : MonoBehaviour {
 
 		//Level 4
 
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level4") {
+			Application.LoadLevel ("Level4a");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level4") {
+			Application.LoadLevel ("MainMenu");
+		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level4a") {
+			Application.LoadLevel ("MainMenu");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level4a") {
+			Application.LoadLevel ("MainMenu");
+		}
 
 
 	}
