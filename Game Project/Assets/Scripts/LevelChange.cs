@@ -163,11 +163,11 @@ public class LevelChange : MonoBehaviour {
 		}
 		
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level4a") {
-			Application.LoadLevel ("MainMenu");
+			Application.LoadLevel ("Level4b2");
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level4b") {
-			Application.LoadLevel ("MainMenu");
+			Application.LoadLevel ("Level4b2");
 		}
 		
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level4b") {
@@ -181,6 +181,15 @@ public class LevelChange : MonoBehaviour {
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level4a2") {
 			Application.LoadLevel ("MainMenu");
 		}
+
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level4b2") {
+			Application.LoadLevel ("MainMenu");
+		}
+		
+		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelB" && Application.loadedLevelName == "Level4b2") {
+			Application.LoadLevel ("MainMenu");
+		}
+
 
 	}
 
