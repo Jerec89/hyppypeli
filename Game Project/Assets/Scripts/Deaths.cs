@@ -1,17 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Deaths : MonoBehaviour {
 
 	
-	TextMesh death;
+	Text death;
 
 	public static int deaths;
 
 	// Use this for initialization
 	void Start () {
 
-		death = GetComponent <TextMesh> ();
+		death = GetComponent <Text> ();
 
 		deaths = 0;
 	}

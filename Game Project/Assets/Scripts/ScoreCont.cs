@@ -1,23 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScoreCont : MonoBehaviour {
 
-	public string SortingLayerName = "Default";
-	public int SortingOrder = 0;
-
 	public static int score;
 
-	TextMesh Text;
+	Text Text;
 	
 
 	// Use this for initialization
 	void Start () {
 
-		Text = GetComponent <TextMesh> ();
-	
-		gameObject.GetComponent<MeshRenderer> ().sortingLayerName = SortingLayerName;
-		gameObject.GetComponent<MeshRenderer> ().sortingOrder = SortingOrder;
+		Text = GetComponent <Text> ();
+
 		score = 0;
 
 

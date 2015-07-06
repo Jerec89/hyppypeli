@@ -1,23 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Diagnostics;
+using UnityEngine.UI;
 
 public class TimeCont : MonoBehaviour {
 
-	public string SortingLayerName = "Default";
-	public int SortingOrder = 0;
-
-	TextMesh TimeText;
+	Text TimeText;
 
 	Stopwatch stopwatch = new Stopwatch();
 
 	// Use this for initialization
 	void Start () {
 
-		gameObject.GetComponent<MeshRenderer> ().sortingLayerName = SortingLayerName;
-		gameObject.GetComponent<MeshRenderer> ().sortingOrder = SortingOrder;
-
-		TimeText = GetComponent <TextMesh> ();
+		TimeText = GetComponent <Text> ();
 	
 		stopwatch.Start();
 	}
