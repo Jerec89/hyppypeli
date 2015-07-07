@@ -5,19 +5,23 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour {
 
 	public Canvas HelpMenu;
+	public Canvas CreditsMenu;
 	public Button PlayText;
 	public Button HelpText;
 	public Button QuitText;
+	public Button CreditsText;
 
 	// Use this for initialization
 	void Start () {
 	
 		HelpMenu = HelpMenu.GetComponent<Canvas> ();
+		CreditsMenu = CreditsMenu.GetComponent<Canvas> ();
 		PlayText = PlayText.GetComponent<Button> ();
 		HelpText = HelpText.GetComponent<Button> ();
 		QuitText = QuitText.GetComponent<Button> ();
-
+		CreditsText = CreditsText.GetComponent<Button> ();
 		HelpMenu.enabled = false;
+		CreditsMenu.enabled = false;
 
 	}
 
@@ -26,6 +30,7 @@ public class Menu : MonoBehaviour {
 		HelpMenu.enabled = true;
 		PlayText.enabled = false;
 		QuitText.enabled = false;
+		CreditsText.enabled = false;
 	}
 
 	public void ClosePress()
@@ -33,7 +38,25 @@ public class Menu : MonoBehaviour {
 		HelpMenu.enabled = false;
 		PlayText.enabled = true;
 		QuitText.enabled = true;
+		CreditsText.enabled = true;
 	}
+
+	public void ClosePress1()
+	{
+		CreditsMenu.enabled = false;
+		PlayText.enabled = true;
+		QuitText.enabled = true;
+		HelpText.enabled = true;
+	}
+
+	public void CreditsPress()
+	{
+		CreditsMenu.enabled = true;
+		PlayText.enabled = false;
+		QuitText.enabled = false;
+		HelpText.enabled = false;
+	}
+
 
 	public void StartGame()
 	{

@@ -15,6 +15,6 @@ public class DontDestroy : MonoBehaviour {
 			
 			DestroyImmediate (gameObject);
 	
+		}
 	}
-}
 }

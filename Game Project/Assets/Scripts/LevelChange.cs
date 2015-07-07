@@ -144,7 +144,7 @@ public class LevelChange : MonoBehaviour {
 		}
 
 		else if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelC" && (Application.loadedLevelName == "Level3a3" || Application.loadedLevelName == "Level3b3") ) {
-			Application.LoadLevel ("MainMenu");
+			Application.LoadLevel ("Level4");
 		}
 
 
