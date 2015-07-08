@@ -20,6 +20,7 @@ TagManager:
   - Down
   - Up
   - area
+  - obj
   layers:
   - Default
   - TransparentFX

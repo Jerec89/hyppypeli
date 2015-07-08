@@ -33,8 +33,11 @@ public class Flyer : MonoBehaviour {
 		inRange = Physics2D.OverlapCircle (transform.position, range, playerLayer);
 
 		if (inRange) {
-			
+
 			transform.position = Vector3.MoveTowards (transform.position, thePlayer.transform.position, speed * Time.deltaTime);
+		
+
+
 		} else if (!inRange) {
 			transform.position = Vector3.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
 		}

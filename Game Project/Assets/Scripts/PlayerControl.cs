@@ -8,24 +8,31 @@ public class PlayerControl : MonoBehaviour {
     bool jump = false;
 
 	int deathVal = 1;
-	float speed = 100;
+	// float speed = 100;
 	public float moveForce;
 	public float maxSpeed;
 	public float jumpForce;
 	
 	private Animator anim;
 	private Rigidbody2D rb;
+	private AudioSource au;
+
 	bool hyppy = true;
 
-	Vector3 start;
+	//Vector3 start;
+
+	public AudioClip[] clips;
 
 
 	void Start () 
 	{
+
+
+		au = GetComponent<AudioSource>();
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		start = transform.position;
+		//start = transform.position;
 
 	
 	}
@@ -47,9 +54,7 @@ public class PlayerControl : MonoBehaviour {
 			if (hyppy) {
 				jump = true;
 				hyppy = false;
-				GetComponent<AudioSource>().Play();
-
-
+				au.PlayOneShot(clips[0]);
 			}
 		}
 
@@ -60,8 +65,9 @@ public class PlayerControl : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "enemy") {
 
+			Application.LoadLevel(Application.loadedLevel);
 			Deaths.deaths += deathVal;
-			transform.position = Vector3.MoveTowards(transform.position, start, speed);
+			//transform.position = Vector3.MoveTowards(transform.position, start, speed);
 		}
 		if (other.collider.tag == "Ground") {
 
@@ -69,7 +75,13 @@ public class PlayerControl : MonoBehaviour {
 		}
 
 		if (other.gameObject.tag == "Score"){
-	
+			au.PlayOneShot(clips[1]);
+
+		}
+
+		if (other.gameObject.tag == "obj"){
+			au.PlayOneShot(clips[2]);
+			
 		}
 
 	}

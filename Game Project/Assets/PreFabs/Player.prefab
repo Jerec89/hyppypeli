@@ -11,9 +11,9 @@ GameObject:
   - 212: {fileID: 21268192}
   - 50: {fileID: 5079904}
   - 114: {fileID: 11464564}
-  - 60: {fileID: 6063828}
   - 95: {fileID: 9594458}
   - 82: {fileID: 8278598}
+  - 61: {fileID: 6158638}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player1
@@ -48,35 +48,19 @@ Rigidbody2D:
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6063828
-PolygonCollider2D:
+--- !u!61 &6158638
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100476}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 9873cea4ccda3944795fde46793252a0, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: .129999995, y: .230000004}
-      - {x: -.100000001, y: .270000011}
-      - {x: -.200000003, y: .270000011}
-      - {x: -.209999993, y: .25}
-      - {x: -.200000003, y: .219999999}
-      - {x: -.150000006, y: .0299999993}
-      - {x: -.280000001, y: -.0700000003}
-      - {x: -.289999992, y: -.100000001}
-      - {x: -.289999992, y: -.129999995}
-      - {x: -.200000003, y: -.159999996}
-      - {x: -.0399999619, y: -.256530643}
-      - {x: .152419567, y: -.262740731}
-      - {x: .189999998, y: -.289999992}
-      - {x: .239999995, y: -.129999995}
-      - {x: .239999995, y: .119999997}
-      - {x: .209999993, y: .170000002}
+  m_Offset: {x: -.0341014862, y: -.0227327347}
+  serializedVersion: 2
+  m_Size: {x: .463597059, y: .531798482}
 --- !u!82 &8278598
 AudioSource:
   m_ObjectHideFlags: 1
@@ -86,9 +70,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 45049e606de529148a6f126ac3ab7bab, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .479999989
+  m_Volume: .400000006
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -177,6 +161,10 @@ MonoBehaviour:
   moveForce: 150
   maxSpeed: 2
   jumpForce: 300
+  clips:
+  - {fileID: 8300000, guid: 45049e606de529148a6f126ac3ab7bab, type: 3}
+  - {fileID: 8300000, guid: 992f4bec4ac6e3547a7a0f1cd8d26c51, type: 3}
+  - {fileID: 8300000, guid: 2ff9fd0315ab4734b9acdb338d522e2e, type: 3}
 --- !u!212 &21268192
 SpriteRenderer:
   m_ObjectHideFlags: 1
