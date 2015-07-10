@@ -18,6 +18,7 @@ public class PlayerControl : MonoBehaviour {
 	private AudioSource au;
 
 	bool hyppy = true;
+	bool isFalling;
 
 	//Vector3 start;
 
@@ -52,6 +53,9 @@ public class PlayerControl : MonoBehaviour {
 		// Hyppiminen
 		if (Input.GetButtonDown ("Jump")) {
 			if (hyppy) {
+
+				anim.SetBool("IsJumping",true);
+				anim.SetBool("IsGround",false);
 				jump = true;
 				hyppy = false;
 				au.PlayOneShot(clips[0]);
@@ -72,6 +76,8 @@ public class PlayerControl : MonoBehaviour {
 		if (other.collider.tag == "Ground") {
 
 			hyppy = true;
+			anim.SetBool("IsJumping",false);
+			anim.SetBool("IsGround",true);
 		}
 
 		if (other.gameObject.tag == "Score"){
@@ -115,8 +121,8 @@ public class PlayerControl : MonoBehaviour {
 			{
 				rb.AddForce(new Vector2(0f, jumpForce));
 				jump = false;
-			}
 
+			}
 
 		}
 

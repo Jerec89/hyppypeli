@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11464564}
   - 95: {fileID: 9594458}
   - 82: {fileID: 8278598}
-  - 61: {fileID: 6158638}
+  - 61: {fileID: 6178706}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player1
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.2700005, y: -8.98999977, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -15.25, y: -9, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -48,19 +48,19 @@ Rigidbody2D:
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6158638
+--- !u!61 &6178706
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100476}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9873cea4ccda3944795fde46793252a0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0341014862, y: -.0227327347}
+  m_Offset: {x: -.0041975975, y: -.0104928017}
   serializedVersion: 2
-  m_Size: {x: .463597059, y: .531798482}
+  m_Size: {x: .234080151, y: .250251114}
 --- !u!82 &8278598
 AudioSource:
   m_ObjectHideFlags: 1
@@ -189,7 +189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 78be1ca5d65edcb479daabecd7565e91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8539c510aed9ae44496949b8e45b10ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
