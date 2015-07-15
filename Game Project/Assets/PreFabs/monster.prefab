@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 471876}
   - 212: {fileID: 21289172}
   - 50: {fileID: 5042574}
-  - 60: {fileID: 6058624}
   - 114: {fileID: 11417934}
   - 95: {fileID: 9529564}
+  - 61: {fileID: 6186198}
   m_Layer: 11
   m_Name: monster
   m_TagString: enemy
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.77999973, y: -4.40999985, z: 0}
+  m_LocalPosition: {x: -2.24000001, y: -8.93000031, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,25 +47,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6058624
-PolygonCollider2D:
+--- !u!61 &6186198
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190956}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 9873cea4ccda3944795fde46793252a0, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -.115000002, y: .144999996}
-      - {x: -.115000002, y: -.115000002}
-      - {x: -.0850000009, y: -.144999996}
-      - {x: .0949999988, y: -.144999996}
-      - {x: .115000002, y: -.125}
-      - {x: .115000002, y: .144999996}
+  m_Offset: {x: 0, y: -.0158875789}
+  serializedVersion: 2
+  m_Size: {x: .680000007, y: .419723868}
 --- !u!95 &9529564
 Animator:
   serializedVersion: 3
@@ -94,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6aeae155dc493949b9437a719d7af94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2
+  MoveSpeed: 7
   MoveAmount: {x: 0, y: 0}
 --- !u!212 &21289172
 SpriteRenderer:
@@ -120,8 +114,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: bb58bdb60adbf1a4eb191a4c936ebf18, type: 3}
-  m_Color: {r: .345588207, g: .307734698, b: .00254109222, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fcf1940efabbd0a4793144876fe54f92, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

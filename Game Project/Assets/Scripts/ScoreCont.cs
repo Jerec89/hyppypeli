@@ -14,15 +14,24 @@ public class ScoreCont : MonoBehaviour {
 
 		Text = GetComponent <Text> ();
 
-		score = 0;
-
-
+		score = PlayerPrefs.GetInt ("CurrentPlayerScore");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 		Text.text = "Score: " + score;
+	}
+
+	public static void AddPoints(int PointsToAdd)
+	{
+		score += PointsToAdd;
+	}
+	
+	public static void Reset()
+	{
+		score = 0;
+		PlayerPrefs.SetInt ("CurrentPlayerScore", score);
 
 	}
 }

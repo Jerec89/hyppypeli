@@ -7,6 +7,8 @@ public class LevelChange : MonoBehaviour {
 
 		//Level 1
 
+		PlayerPrefs.SetInt ("CurrentPlayerScore", ScoreCont.score);
+
 		if (coll.gameObject.tag == "Player1" && gameObject.tag == "levelA" && Application.loadedLevelName == "Level1") {
 			Application.LoadLevel ("Level1a");
 			

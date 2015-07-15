@@ -61,6 +61,9 @@ public class Menu : MonoBehaviour {
 	public void StartGame()
 	{
 		Application.LoadLevel ("Level1");
+		PlayerPrefs.SetInt ("CurrentPlayerScore", 0);
+		PlayerPrefs.SetInt ("CurrentPlayerDeaths", 0);
+		PlayerPrefs.SetFloat("CurrentPlayerTime",0);
 	}
 
 	public void QuitGame()

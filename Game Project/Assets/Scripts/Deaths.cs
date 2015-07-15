@@ -14,7 +14,7 @@ public class Deaths : MonoBehaviour {
 
 		death = GetComponent <Text> ();
 
-		deaths = 0;
+		deaths = PlayerPrefs.GetInt ("CurrentPlayerDeaths");
 	}
 	
 	// Update is called once per frame
@@ -25,5 +25,17 @@ public class Deaths : MonoBehaviour {
 
 		}
 
+	public static void AddDeaths(int DeathsToAdd)
+	{
+		deaths += DeathsToAdd;
+		PlayerPrefs.SetInt ("CurrentPlayerDeaths", deaths);
+	}
+	
+	public static void Reset()
+	{
+		deaths = 0;
+		PlayerPrefs.SetInt ("CurrentPlayerDeaths", deaths);
+		
+	}
 
 }

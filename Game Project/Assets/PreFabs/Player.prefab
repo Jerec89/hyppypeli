@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveForce: 150
-  maxSpeed: 2
+  maxSpeed: 2.5
   jumpForce: 300
   clips:
   - {fileID: 8300000, guid: 45049e606de529148a6f126ac3ab7bab, type: 3}

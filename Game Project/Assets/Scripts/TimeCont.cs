@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Diagnostics;
 using UnityEngine.UI;
 
 public class TimeCont : MonoBehaviour {
 
 	Text TimeText;
 
-	float timer = 0f;
+	float timer;
 	string min;
 	string sec;
 
@@ -15,13 +14,14 @@ public class TimeCont : MonoBehaviour {
 	void Start () {
 
 		TimeText = GetComponent <Text> ();
-	
+		timer = PlayerPrefs.GetFloat("CurrentPlayerTime");
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	 void Update () {
 
 		timer += Time.deltaTime;
+		PlayerPrefs.SetFloat("CurrentPlayerTime",timer);
 		min = Mathf.Floor(timer / 60).ToString("00");
 		sec = (timer % 60).ToString("00");
 

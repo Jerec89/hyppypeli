@@ -2,12 +2,13 @@
 using System.Collections;
 
 
+
 public class PlayerControl : MonoBehaviour {
 	
     bool facingRight = true;
     bool jump = false;
 
-	int deathVal = 1;
+	private int deathVal = 1;
 	// float speed = 100;
 	public float moveForce;
 	public float maxSpeed;
@@ -70,7 +71,7 @@ public class PlayerControl : MonoBehaviour {
 		if (other.gameObject.tag == "enemy") {
 
 			Application.LoadLevel(Application.loadedLevel);
-			Deaths.deaths += deathVal;
+			Deaths.AddDeaths(deathVal);
 			//transform.position = Vector3.MoveTowards(transform.position, start, speed);
 		}
 		if (other.collider.tag == "Ground") {
