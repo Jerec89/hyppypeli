@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 475066}
   - 212: {fileID: 21229532}
   - 50: {fileID: 5093774}
-  - 58: {fileID: 5814028}
   - 114: {fileID: 11423160}
   - 95: {fileID: 9520894}
+  - 61: {fileID: 6134132}
   m_Layer: 11
   m_Name: Flyer
   m_TagString: enemy
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 131228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.0299997, y: -2.16000009, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.70000005, y: 1.70000005, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,8 +47,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5814028
-CircleCollider2D:
+--- !u!61 &6134132
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -57,9 +57,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: .0225518551, y: -.0428492241}
   serializedVersion: 2
-  m_Radius: .174999997
+  m_Size: {x: .170770288, y: .294301599}
 --- !u!95 &9520894
 Animator:
   serializedVersion: 3
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14319ee401ca0d84da10a97257694be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 1.29999995
   range: 3
   playerLayer:
     serializedVersion: 2
@@ -118,8 +118,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8aa295bc65b988240a0996bf4e61a6ea, type: 3}
-  m_Color: {r: .808823526, g: .279519886, b: .312373191, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 63fbd490e7917a046955e6013a9f0896, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

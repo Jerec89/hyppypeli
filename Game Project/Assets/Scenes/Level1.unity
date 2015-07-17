@@ -477,7 +477,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 497784, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 186292, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
       propertyPath: m_Name
@@ -499,6 +499,14 @@ Prefab:
     - target: {fileID: 497784, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Offset.y
+      value: -.0508725643
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Size.y
+      value: .238255411
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
@@ -2401,6 +2409,14 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.20000005
       objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Offset.y
+      value: -.0410215035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Size.y
+      value: .257956982
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
   m_IsPrefabParent: 0
@@ -2414,7 +2430,7 @@ GameObject:
   - 4: {fileID: 1564975103}
   - 68: {fileID: 1564975102}
   - 114: {fileID: 1564975101}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LevelTrig 1
   m_TagString: levelB
   m_Icon: {fileID: 0}
@@ -2668,7 +2684,7 @@ GameObject:
   - 4: {fileID: 1683264069}
   - 68: {fileID: 1683264068}
   - 114: {fileID: 1683264067}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LevelTrig
   m_TagString: levelA
   m_Icon: {fileID: 0}
@@ -2767,6 +2783,14 @@ Prefab:
     - target: {fileID: 497784, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
       propertyPath: m_LocalScale.y
       value: 1.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Offset.y
+      value: -.0293513127
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Size.y
+      value: .281297356
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}

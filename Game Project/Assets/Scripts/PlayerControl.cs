@@ -9,7 +9,6 @@ public class PlayerControl : MonoBehaviour {
     bool jump = false;
 
 	private int deathVal = 1;
-	// float speed = 100;
 	public float moveForce;
 	public float maxSpeed;
 	public float jumpForce;
@@ -20,8 +19,7 @@ public class PlayerControl : MonoBehaviour {
 
 	bool hyppy = true;
 	bool isFalling;
-
-	//Vector3 start;
+	
 
 	public AudioClip[] clips;
 
@@ -34,7 +32,6 @@ public class PlayerControl : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		//start = transform.position;
 
 	
 	}
@@ -72,7 +69,7 @@ public class PlayerControl : MonoBehaviour {
 
 			Application.LoadLevel(Application.loadedLevel);
 			Deaths.AddDeaths(deathVal);
-			//transform.position = Vector3.MoveTowards(transform.position, start, speed);
+
 		}
 		if (other.collider.tag == "Ground") {
 

@@ -496,6 +496,14 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.20000005
       objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Offset.y
+      value: -.0391352177
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Size.y
+      value: .261729538
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
   m_IsPrefabParent: 0
@@ -1157,7 +1165,7 @@ RectTransform:
   m_Children:
   - {fileID: 151552431}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 32
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -7.92000008, y: -5.32999992}
@@ -1868,6 +1876,14 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.20000005
       objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Offset.y
+      value: -.0489191189
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152680, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
+      propertyPath: m_Size.y
+      value: .242161751
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 167b5c481580eb14a8b5d1b23fbd4491, type: 2}
   m_IsPrefabParent: 0
@@ -2179,7 +2195,7 @@ Transform:
   m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
 --- !u!1001 &1240406905
 Prefab:
   m_ObjectHideFlags: 0
@@ -2809,7 +2825,7 @@ GameObject:
   - 4: {fileID: 1564975103}
   - 68: {fileID: 1564975102}
   - 114: {fileID: 1564975101}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LevelTrig 1
   m_TagString: levelB
   m_Icon: {fileID: 0}
@@ -3101,7 +3117,7 @@ GameObject:
   - 4: {fileID: 1683264069}
   - 68: {fileID: 1683264068}
   - 114: {fileID: 1683264067}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LevelTrig
   m_TagString: levelA
   m_Icon: {fileID: 0}

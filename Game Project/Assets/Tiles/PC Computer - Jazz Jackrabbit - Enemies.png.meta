@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: fcf1940efabbd0a4793144876fe54f92
-timeCreated: 1435222359
+timeCreated: 1437119679
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,8 @@ TextureImporter:
     21300006: PC Computer - Jazz Jackrabbit - Enemies_3
     21300008: PC Computer - Jazz Jackrabbit - Enemies_4
     21300010: PC Computer - Jazz Jackrabbit - Enemies_5
+    21300012: PC Computer - Jazz Jackrabbit - Enemies_6
+    21300014: PC Computer - Jazz Jackrabbit - Enemies_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -112,6 +114,26 @@ TextureImporter:
         y: 732
         width: 65
         height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Jazz Jackrabbit - Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 600
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PC Computer - Jazz Jackrabbit - Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 619
+        width: 42
+        height: 46
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

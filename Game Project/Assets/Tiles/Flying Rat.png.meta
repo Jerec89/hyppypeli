@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: ea2d72e83a56a6344a9ec1a6f272e668
-timeCreated: 1433241970
+guid: 63fbd490e7917a046955e6013a9f0896
+timeCreated: 1437120218
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mon3_sprite_base_0
-    21300002: mon3_sprite_base_1
-    21300004: mon3_sprite_base_2
-    21300006: mon3_sprite_base_3
-    21300008: mon3_sprite_base_4
+    21300000: Flying Rat_0
+    21300002: Flying Rat_1
+    21300004: Flying Rat_2
+    21300006: Flying Rat_3
+    21300008: Flying Rat_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -54,55 +54,55 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: mon3_sprite_base_0
+    - name: Flying Rat_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 199
-        width: 44
-        height: 48
+        x: 2
+        y: 93
+        width: 27
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mon3_sprite_base_1
+    - name: Flying Rat_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 200
-        width: 55
-        height: 50
+        x: 2
+        y: 52
+        width: 27
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mon3_sprite_base_2
+    - name: Flying Rat_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 198
-        width: 58
-        height: 56
+        x: 31
+        y: 52
+        width: 27
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mon3_sprite_base_3
+    - name: Flying Rat_3
       rect:
         serializedVersion: 2
-        x: 197
-        y: 198
-        width: 54
-        height: 54
+        x: 60
+        y: 52
+        width: 27
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mon3_sprite_base_4
+    - name: Flying Rat_4
       rect:
         serializedVersion: 2
-        x: 260
-        y: 199
-        width: 52
-        height: 49
+        x: 89
+        y: 52
+        width: 27
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
