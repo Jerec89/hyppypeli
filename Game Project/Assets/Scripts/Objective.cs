@@ -5,7 +5,7 @@ public class Objective : MonoBehaviour {
 
 	public int PointsToAdd;
 
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnTriggerEnter2D(Collider2D coll){
 		if (coll.gameObject.tag == "Player1") {
 			Destroy (gameObject);
 			ScoreCont.AddPoints(PointsToAdd);

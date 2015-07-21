@@ -78,16 +78,20 @@ public class PlayerControl : MonoBehaviour {
 			anim.SetBool("IsGround",true);
 		}
 
-		if (other.gameObject.tag == "Score"){
+
+
+	}
+	void OnTriggerEnter2D(Collider2D coll){
+
+		if (coll.gameObject.tag == "Score"){
 			au.PlayOneShot(clips[1]);
-
+			
 		}
-
-		if (other.gameObject.tag == "obj"){
+		
+		if (coll.gameObject.tag == "obj"){
 			au.PlayOneShot(clips[2]);
 			
 		}
-
 	}
 
 	void FixedUpdate(){
