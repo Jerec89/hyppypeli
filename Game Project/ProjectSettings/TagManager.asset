@@ -21,6 +21,7 @@ TagManager:
   - Up
   - area
   - obj
+  - F_obj
   layers:
   - Default
   - TransparentFX

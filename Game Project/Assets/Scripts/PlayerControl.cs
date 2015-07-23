@@ -12,6 +12,10 @@ public class PlayerControl : MonoBehaviour {
 	public float moveForce;
 	public float maxSpeed;
 	public float jumpForce;
+
+	public GameObject LArrow;
+	public GameObject RArrow;
+	public GameObject DArrow;
 	
 	private Animator anim;
 	private Rigidbody2D rb;
@@ -67,6 +71,7 @@ public class PlayerControl : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "enemy") {
 
+			GameObject deathpart = (GameObject)Instantiate(Resources.Load("DeathPart"),transform.position,transform.rotation);
 			Application.LoadLevel(Application.loadedLevel);
 			Deaths.AddDeaths(deathVal);
 
@@ -90,6 +95,14 @@ public class PlayerControl : MonoBehaviour {
 		
 		if (coll.gameObject.tag == "obj"){
 			au.PlayOneShot(clips[2]);
+			LArrow.SetActive(true);
+			RArrow.SetActive(true);
+			
+		}
+
+		if (coll.gameObject.tag == "F_obj"){
+			au.PlayOneShot(clips[2]);
+			DArrow.SetActive(true);
 			
 		}
 	}

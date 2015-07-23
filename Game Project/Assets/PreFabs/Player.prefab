@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.25, y: -9, z: 0}
+  m_LocalPosition: {x: -15.3599997, y: -9, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -162,6 +162,9 @@ MonoBehaviour:
   moveForce: 150
   maxSpeed: 2.5
   jumpForce: 300
+  LArrow: {fileID: 0}
+  RArrow: {fileID: 0}
+  DArrow: {fileID: 0}
   clips:
   - {fileID: 8300000, guid: 45049e606de529148a6f126ac3ab7bab, type: 3}
   - {fileID: 8300000, guid: 992f4bec4ac6e3547a7a0f1cd8d26c51, type: 3}
