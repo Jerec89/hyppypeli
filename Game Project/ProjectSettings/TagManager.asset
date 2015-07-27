@@ -22,6 +22,7 @@ TagManager:
   - area
   - obj
   - F_obj
+  - lift
   layers:
   - Default
   - TransparentFX

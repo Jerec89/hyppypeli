@@ -76,16 +76,28 @@ public class PlayerControl : MonoBehaviour {
 			Deaths.AddDeaths(deathVal);
 
 		}
-		if (other.collider.tag == "Ground") {
+		if (other.collider.tag == "Ground" || other.collider.tag == "Door2" || other.collider.tag == "lift"  ) {
 
 			hyppy = true;
 			anim.SetBool("IsJumping",false);
 			anim.SetBool("IsGround",true);
 		}
-
+		if (other.transform.tag == "lift") {
+			transform.parent = other.transform;
+		
+		}
 
 
 	}
+
+	void OnCollisionExit2D(Collision2D other){
+		if (other.transform.tag == "lift") {
+			transform.parent = null;
+			
+		}
+
+	}
+
 	void OnTriggerEnter2D(Collider2D coll){
 
 		if (coll.gameObject.tag == "Score"){
@@ -150,6 +162,6 @@ public class PlayerControl : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-	
+
 
 }

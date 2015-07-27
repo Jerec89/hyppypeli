@@ -29,4 +29,5 @@ public class Lift : MonoBehaviour {
 			MoveDirection = 1;
 		}
 	}
+	
 }
