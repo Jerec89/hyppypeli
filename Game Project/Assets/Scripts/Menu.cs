@@ -10,7 +10,6 @@ public class Menu : MonoBehaviour {
 
 	public Button PlayText;
 	public Button HelpText;
-	public Button QuitText;
 	public Button CreditsText;
 	public Button LeaderText;
 
@@ -23,7 +22,6 @@ public class Menu : MonoBehaviour {
 
 		PlayText = PlayText.GetComponent<Button> ();
 		HelpText = HelpText.GetComponent<Button> ();
-		QuitText = QuitText.GetComponent<Button> ();
 		CreditsText = CreditsText.GetComponent<Button> ();
 		LeaderText = LeaderText.GetComponent<Button> ();
 
@@ -73,11 +71,6 @@ public class Menu : MonoBehaviour {
 		PlayerPrefs.SetFloat("CurrentPlayerTime",0);
 	}
 
-	public void QuitGame()
-	{
-		Application.Quit ();
-	}
-	
 
 
 	
