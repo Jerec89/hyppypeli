@@ -272,10 +272,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Game Mady By:\t\t\t\t\t\t\t\t\t\t\t\tEngine:\nJere Kellosalo\t\t\t\t\t\t\t\t\t\t\t\tUnity\t\t\t\t\t\t\t\t\t\t
-    \nMusic from:\t\t\t\t\t\t\t\t\t\t\t\t\tSounds:\nJazz Jackrabbit \t\t\t\t\t\t\t\t\t\t\tOpenGameArt.com\nGolden
-    Axe\n\nTextures & Sprites:\t\t\t\t\t\t\t\t\tPrograming:\nOpenGameArt.com \t\t\t\t\t\t\t\t\t\tJere
-    Kellosalo\nSpriters-resource.com\n\nPrograming help:\nUnity Tutorials\n\n"
+  m_Text: "Mady By:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPrograming help:\nJere Kellosalo\t\t\t\t\t\t\t\t\t\t\t\tUnity
+    Tutorials\n\nEngine:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTesting:\nUnity\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJanne
+    Hellman\n\nTextures & Sprites:\nOpenGameArt.com\nSpriters-resource.com\n\nMusic:\t\t\t\nJazz
+    Jackrabbit \nGolden Axe\n\nSounds:\nOpenGameArt.com\nMinecraft\n\nPrograming:\nJere
+    Kellosalo"
 --- !u!222 &283830490
 CanvasRenderer:
   m_ObjectHideFlags: 0

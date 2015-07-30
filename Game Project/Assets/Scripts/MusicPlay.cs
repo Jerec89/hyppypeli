@@ -44,18 +44,23 @@ public class MusicPlay : MonoBehaviour {
 			DestroyImmediate(gameObject);
 		}
 
-		if (Application.loadedLevelName == "Level2" && au.clip == clips[0]) {
+		if (Application.loadedLevelName == "Level2" && (au.clip == clips[0] || au.clip == clips[2] || au.clip == clips[3] )) {
 			au.clip = clips[1];
 			au.Play ();
 		}
 
-		else if (Application.loadedLevelName == "Level3" && au.clip == clips[1]) {
+		else if (Application.loadedLevelName == "Level3" && (au.clip == clips[1] || au.clip == clips[0] || au.clip == clips[3] )) {
 			au.clip = clips[2];
 			au.Play ();
 		}
 
-		else if (Application.loadedLevelName == "Level4" && au.clip == clips[2]) {
+		else if (Application.loadedLevelName == "Level4" && (au.clip == clips[0] || au.clip == clips[1] || au.clip == clips[2] )) {
 			au.clip = clips[3];
+			au.Play ();
+		}
+
+		else if (Application.loadedLevelName == "Level1" && (au.clip == clips[1] || au.clip == clips[2] || au.clip == clips[3] )) {
+			au.clip = clips[0];
 			au.Play ();
 		}
 	}

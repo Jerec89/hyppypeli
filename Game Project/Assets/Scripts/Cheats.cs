@@ -13,33 +13,31 @@ public class Cheats : MonoBehaviour {
 	
 		if(Input.GetKey(KeyCode.Alpha1)){
 
-			Application.LoadLevel("level2a");
+			Application.LoadLevel("level1");
 		}
 
 		else if(Input.GetKey(KeyCode.Alpha2)){
 			
-			Application.LoadLevel("level2a2");
+			Application.LoadLevel("level2");
 		}
 
 		else if(Input.GetKey(KeyCode.Alpha3)){
 			
-			Application.LoadLevel("level2a3");
+			Application.LoadLevel("level3");
 		}
 
 		else if(Input.GetKey(KeyCode.Alpha4)){
 			
-			Application.LoadLevel("level2b");
+			Application.LoadLevel("level4");
 		}
 
-		else if(Input.GetKey(KeyCode.Alpha5)){
-			
-			Application.LoadLevel("level2b2");
-		}
 
-		else if(Input.GetKey(KeyCode.Alpha6)){
-			
-			Application.LoadLevel("level2b3");
+		if (Input.GetKey (KeyCode.G)) {
+			Physics2D.IgnoreLayerCollision(8,11,true);
 		}
-
+		
+		if (Input.GetKey (KeyCode.M) ) {
+			Physics2D.IgnoreLayerCollision(8,11,false);
+		}
 	}
 }

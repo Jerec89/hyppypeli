@@ -310,7 +310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 15
 --- !u!1001 &171648003
 Prefab:
   m_ObjectHideFlags: 0
@@ -447,6 +447,10 @@ Prefab:
       propertyPath: m_Radius
       value: .860491753
       objectReference: {fileID: 0}
+    - target: {fileID: 108116, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
   m_IsPrefabParent: 0
@@ -529,6 +533,10 @@ Prefab:
     - target: {fileID: 5889156, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
       propertyPath: m_Radius
       value: .890172601
+      objectReference: {fileID: 0}
+    - target: {fileID: 108116, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
@@ -641,7 +649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 57
 --- !u!1 &308655759
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +691,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 57
+  m_RootOrder: 58
 --- !u!1001 &322400524
 Prefab:
   m_ObjectHideFlags: 0
@@ -1539,6 +1547,10 @@ Prefab:
       propertyPath: m_Radius
       value: .866084099
       objectReference: {fileID: 0}
+    - target: {fileID: 108116, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
   m_IsPrefabParent: 0
@@ -1576,7 +1588,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
 --- !u!224 &686688297
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1589,7 +1601,7 @@ RectTransform:
   m_Children:
   - {fileID: 76385684}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 32
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -7.92000008, y: -5.32999992}
@@ -2107,7 +2119,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 40
 --- !u!1 &1056550892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,7 +2191,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
 --- !u!1001 &1061568429
 Prefab:
   m_ObjectHideFlags: 0
@@ -2878,6 +2890,10 @@ Prefab:
       propertyPath: m_Radius
       value: .849097788
       objectReference: {fileID: 0}
+    - target: {fileID: 108116, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2093ff94dfa57844cbbf8188e675c57c, type: 2}
   m_IsPrefabParent: 0
@@ -3117,7 +3133,7 @@ RectTransform:
   - {fileID: 1450710670}
   - {fileID: 362036733}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 26
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3215,7 +3231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 17
 --- !u!1 &1450710669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,7 +3446,7 @@ Transform:
   m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 47
 --- !u!1 &1564975100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,7 +4124,7 @@ Transform:
   m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 36
 --- !u!1 &1910678778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,7 +4196,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 18
 --- !u!1 &1926504055
 GameObject:
   m_ObjectHideFlags: 0
