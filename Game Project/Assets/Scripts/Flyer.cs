@@ -7,8 +7,6 @@ public class Flyer : MonoBehaviour {
 
 	public float speed;
 
-	float Back = 100;
-
 	public float range;
 
 	public LayerMask playerLayer;
@@ -30,17 +28,33 @@ public class Flyer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
 		inRange = Physics2D.OverlapCircle (transform.position, range, playerLayer);
 
 		if (inRange) {
 
 			transform.position = Vector3.MoveTowards (transform.position, thePlayer.transform.position, speed * Time.deltaTime);
+			if(transform.position.x - thePlayer.transform.position.x > 0){
+			
+			transform.localScale = new Vector2(-1.7f,1.7f);
+			}else
+			transform.localScale = new Vector2(1.7f,1.7f);
+
+
+
 		
 
-
 		} else if (!inRange) {
+
 			transform.position = Vector3.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
+			if(transform.position.x - startPos.x > 0){
+				
+				transform.localScale = new Vector2(-1.7f,1.7f);
+			}else
+				transform.localScale = new Vector2(1.7f,1.7f);
+
 		}
+
 	}
 
 	void OnDrawGizmosSelected(){
@@ -49,12 +63,5 @@ public class Flyer : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter2D(Collision2D coll){
 
-		if (coll.gameObject.tag == "Player1") {
-		
-			transform.position = Vector3.MoveTowards(transform.position,startPos, Back);
-		}
-	}
-	
 }

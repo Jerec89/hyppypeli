@@ -7,8 +7,6 @@ public class bat : MonoBehaviour {
 
 	public float speed;
 
-	float Back = 100;
-
 	public float range;
 
 	public LayerMask playerLayer;
@@ -40,13 +38,23 @@ public class bat : MonoBehaviour {
 			
 			transform.position = Vector3.MoveTowards (transform.position, thePlayer.transform.position, speed * Time.deltaTime);
 			anim.SetBool ("move", true);
-		
+			if(transform.position.x - thePlayer.transform.position.x > 0){
+				
+				transform.localScale = new Vector2(2f,2f);
+			}else
+				transform.localScale = new Vector2(-2f,2f);
 		
 
 
 		} else if (!inRange) {
 			transform.position = Vector3.MoveTowards (transform.position, startPos, speed * Time.deltaTime);
-		
+
+			if(transform.position.x - startPos.x > 0){
+				
+				transform.localScale = new Vector2(2f,2f);
+			}else
+				transform.localScale = new Vector2(-2f,2f);
+
 
 			if (transform.position == startPos) {
 				anim.SetBool ("move", false);
@@ -60,15 +68,5 @@ public class bat : MonoBehaviour {
 		Gizmos.DrawSphere (transform.position, range);
 
 	}
-
-	void OnCollisionEnter2D(Collision2D coll){
-
-		if (coll.gameObject.tag == "Player1") {
 		
-			transform.position = Vector3.MoveTowards(transform.position,startPos, Back);
-		}
-	}
-
-
-	
 }
