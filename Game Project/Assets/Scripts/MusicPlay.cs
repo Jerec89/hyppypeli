@@ -24,7 +24,7 @@ public class MusicPlay : MonoBehaviour {
 		au.clip = clips [0];
 		au.Play ();
 
-		if (Instance != this || Application.loadedLevelName == "MainMenu")
+		if (Instance != this || Application.loadedLevelName == "MainMenu" || Application.loadedLevelName == "Victory")
 		{
 			Destroy(gameObject);
 		}
@@ -39,7 +39,7 @@ public class MusicPlay : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Application.loadedLevelName == "MainMenu")
+		if (Application.loadedLevelName == "MainMenu" || Application.loadedLevelName == "Victory" )
 		{
 			DestroyImmediate(gameObject);
 		}

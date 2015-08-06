@@ -178,8 +178,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -248.399994, y: 121}
-  m_SizeDelta: {x: 203.199997, y: 51.9000015}
+  m_AnchoredPosition: {x: -211, y: 119}
+  m_SizeDelta: {x: 278, y: 56}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &206260248
 MonoBehaviour:
@@ -206,7 +206,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Hyppypeli
+  m_Text: Gold Hunter
 --- !u!222 &206260249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -807,6 +807,7 @@ GameObject:
   - 224: {fileID: 716513738}
   - 222: {fileID: 716513740}
   - 114: {fileID: 716513739}
+  - 114: {fileID: 716513741}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -863,6 +864,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 716513737}
+--- !u!114 &716513741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716513737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf59dc28e5636c149a0829a6db45b168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &736650202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Score\t\t\t\t\t\t\t\tDeaths\t\t\t\t\t\t\t\tTime"
+  m_Text: "Score\t\t\t\t\t\t\t\tDeaths\t\t\t\t\t\t\t\t  Time"
 --- !u!222 &917509596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1458,7 +1470,7 @@ GameObject:
   - 114: {fileID: 1225605765}
   - 114: {fileID: 1225605764}
   m_Layer: 5
-  m_Name: Leaderboard
+  m_Name: Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,7 +1571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Leaderboard
+  m_Text: Run Stats
 --- !u!222 &1225605766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2177,6 +2189,7 @@ GameObject:
   - 224: {fileID: 1709158282}
   - 222: {fileID: 1709158284}
   - 114: {fileID: 1709158283}
+  - 114: {fileID: 1709158285}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -2233,6 +2246,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709158281}
+--- !u!114 &1709158285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709158281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbcb15162de81a340b16446788fce3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1735975340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2453,6 +2477,7 @@ GameObject:
   - 224: {fileID: 1799851971}
   - 222: {fileID: 1799851970}
   - 114: {fileID: 1799851969}
+  - 114: {fileID: 1799851972}
   m_Layer: 5
   m_Name: Death
   m_TagString: Untagged
@@ -2509,6 +2534,17 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: 131}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1799851972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799851968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032acf2d72e38a74ebfc441aa64b5b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1818400170
 GameObject:
   m_ObjectHideFlags: 0

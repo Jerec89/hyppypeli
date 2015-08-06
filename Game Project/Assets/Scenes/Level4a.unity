@@ -868,9 +868,31 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11497474, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &364421613 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116180, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
+  m_PrefabInternal: {fileID: 364421612}
+--- !u!114 &364421614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364421613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46fcb8bced28b04e9543cdd5cda4bd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  range: 2.5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  inRange: 0
 --- !u!1001 &366542617
 Prefab:
   m_ObjectHideFlags: 0
@@ -1008,15 +1030,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11497474, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
       propertyPath: range
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 21231150, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11497474, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &374909985 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116180, guid: f9b3b1b9161534041aecd1e89cbf2700, type: 2}
+  m_PrefabInternal: {fileID: 374909984}
+--- !u!114 &374909986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374909985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f3de8b12ec5f149b7c9fe55c809cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  range: 2.5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  inRange: 0
 --- !u!1001 &380035079
 Prefab:
   m_ObjectHideFlags: 0
@@ -5130,7 +5174,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1138492075}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
